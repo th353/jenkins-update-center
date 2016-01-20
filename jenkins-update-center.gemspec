@@ -3,7 +3,8 @@ Gem::Specification.new do |s|
   s.version     = '0.0.2'
   s.date        = '2016-01-20'
   s.summary     = "jenkins update center"
-  s.description = "returns the current version of jenkins or given jenkins-plugin name"
+  s.description = "This project is a simple API client for interacting with the Update-Center of the Jenkins Continuous
+  Integration server"
   s.authors     = ["Markus These"]
   s.email       = 'markus@tse-c.de'
   s.files       = ["lib/jenkins-update-center.rb"]
