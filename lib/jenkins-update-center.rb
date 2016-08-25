@@ -36,6 +36,16 @@ class JenkinsUpdateCenter
     plugin
   end
 
+  def self.all_latest_plugin_versions
+    plugins = {}
+    validate_update_center.each do |k,v|
+      if k == 'plugins'
+        plugin[v[name]] = v[version]
+      end
+    end
+    plugins
+  end
+
   def self.healthcheck
     puts 'eat healthy'
   end
