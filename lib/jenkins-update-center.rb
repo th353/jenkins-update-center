@@ -38,9 +38,12 @@ class JenkinsUpdateCenter
 
   def self.all_latest_plugin_versions
     plugins = {}
-    validate_update_center.each do |k,v|
-      if k == 'plugins'
-        plugin[v[name]] = v[version]
+    validate_update_center.each do |data ,all_plugins|
+      if data == 'plugins'
+        all_plugins.each do | plugin |
+          plugins[plugin[0]] = plugin[1]['version']
+        end
+
       end
     end
     plugins

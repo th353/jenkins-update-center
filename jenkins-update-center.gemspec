@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'jenkins-update-center'
-  s.version     = '0.0.4'
+  s.version     = '0.0.6'
   s.date        = '2016-08-25'
   s.summary     = "jenkins update center"
   s.description = "This project is a simple API client for interacting with the Update-Center of the Jenkins Continuous

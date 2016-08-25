@@ -49,6 +49,14 @@ You can also get the information of a specific Plugin
 puts @plugin_information
 ```
 
+If you need the latest versions of all Plugins, use this:
+
+```ruby
+#return: Plugininformation as HASH {"plugin"=>"1.2.3"}
+@all_plugin_versions = JenkinsUpdateCenter.all_latest_plugin_versions
+
+puts @all_plugin_versions
+```
 ### Return
 Example:  
 
